@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body onload="checkstorage()">
+<script>
+function checkstorage() {
+var x = localStorage.getItem("teste");
+if (x=="" || x==null)
+{
+localStorage.setItem("teste", 0);
+}
+else if (x!="" && x!=null)
+{
+x=Number(x)+1;
+localStorage.setItem("teste", x);
+}
+x = localStorage.getItem("teste");
+alert(x);
+}
+</script>
+</body>
+
+</html>
